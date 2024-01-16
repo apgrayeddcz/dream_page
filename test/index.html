@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Список страниц | Мечта (интернет-магазин)</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/app-project.css">
+    <style type="text/css">
+      .container {
+        width: 100%;
+        max-width: 1340px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 40px;
+        position: relative;
+        font-family: 'Roboto', 'Rubik', 'Arial', sans-serif;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 120px;
+        row-gap: 60px;
+      }
+      h1 {
+        margin: 0 0 30px;
+        font-size: 30px;
+        color: #000
+      }
+      h2 {
+        margin: 0 0 20px;
+        white-space: nowrap;
+        font-size: 20px;
+        color: #000
+      }
+      h3 {
+        margin: 0 0 4px;
+        color: #000
+      }
+      ol {
+        margin: 0 0 20px 0;
+      }
+      ol li {
+        font-size: 13px;
+        margin: 0 0 8px;
+        color: #000
+      }
+      ol li a {
+        font-size: 13px;
+        line-height: 1.4;
+        color: #000
+      }
+      ol li a:visited {
+        color: purple
+      }
+      
+      @media (max-width: 1040px) {
+        .row {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .row {
+          grid-template-columns: repeat(1, 1fr);
+          row-gap: 16px;
+        }
+        h1 {
+          margin: 0 0 12px;
+        }
+      }
+    </style>
+    <!-- Removing the error about the absence of favicon-->
+    <link rel="shortcut icon" href="data:,">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Шаблоны</h1>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>Корзина</h2>
+          <ol>
+            <li><a href="basket-empty.html" target="_blank">Корзина (пустая)</a></li>
+            <li><a href="basket-with-product-purchase-not-available.html" target="_blank">Корзина (с товаром, покупка недоступна)</a></li>
+            <li><a href="basket-purchase-available.html" target="_blank">Корзина (покупка доступна)</a></li>
+            <li><a href="basket-standard.html" target="_blank">Корзина (стандарт)</a></li>
+            <li><a href="basket-your-order.html" target="_blank">Корзина (ваш заказ)</a></li>
+            <li><a href="basket-your-order-warning.html" target="_blank">Корзина (ваш заказ; предупреждение)</a></li>
+            <li><a href="basket-button-with-download-icon.html" target="_blank">Корзина (кнопка с иконкой загрузки)</a></li>
+            <li><a href="basket-button-with-download-icon-error.html" target="_blank">Корзина (кнопка с иконкой загрузки, ошибка)</a></li>
+            <li><a href="basket-payment-method-selected.html" target="_blank">Корзина (способ оплаты выбран)</a></li>
+            <li><a href="basket-payment-method-selected-awaiting-assembly.html" target="_blank">Корзина (способ оплаты выбран, ожидает подтверждения)</a></li>
+            <li><a href="basket-payment-method-selected-awaiting-confirmation.html" target="_blank">Корзина (способ оплаты выбран, ожидает сборки)</a></li>
+            <li><a href="basket-payment-method-selected-order-confirmed.html" target="_blank">Корзина (способ оплаты выбран, заказ подтвержден)</a></li>
+            <li><a href="basket-order-statuses-completed.html" target="_blank">Корзина (статусы заказ выполнен)</a></li>
+            <li><a href="basket-statuses-order-cancelled.html" target="_blank">Корзина (статусы заказ отменен)</a></li>
+            <li><a href="basket-statuses-pending-payment.html" target="_blank">Корзина (статусы ожидает оплаты)</a></li>
+            <li><a href="basket-statuses-payment-error.html" target="_blank">Корзина (статусы ошибка оплаты)</a></li>
+            <li><a href="basket-statuses-pending-confirmation.html" target="_blank">Корзина (статусы ожидает подтверждения)</a></li>
+            <li><a href="basket-address-selection.html" target="_blank">Корзина (выбор адреса, заполнение адреса)</a></li>
+            <li><a href="basket-address-selection-new-address.html" target="_blank">Корзина (выбор адреса, новый адрес)</a></li>
+            <li><a href="basket-payment-list.html" target="_blank">Корзина (оплата; список)</a></li>
+            <li><a href="basket-payment-change.html" target="_blank">Корзина (оплата; сдача)</a></li>
+            <li><a href="basket-promo-code.html" target="_blank">Корзина (промокод)</a></li>
+            <li><a href="basket-promo-code-error.html" target="_blank">Корзина (промокод, ошибка)</a></li>
+            <li><a href="basket-bonus.html" target="_blank">Корзина (бонус)</a></li>
+            <li><a href="basket-bonus-error.html" target="_blank">Корзина (бонус, ошибка)</a></li>
+          </ol>
+        </div>
+        <div class="col">
+          <h2>Профиль</h2>
+          <ol>
+            <li><a href="profile.html" target="_blank">Профиль</a></li>
+            <li><a href="profile-name.html" target="_blank">Профиль (имя)</a></li>
+            <li><a href="profile-orders.html" target="_blank">Профиль (заказы)</a></li>
+            <li><a href="profile-contact-us.html" target="_blank">Профиль (связаться с нами)</a></li>
+            <li><a href="profile-addresses.html" target="_blank">Профиль (адреса)</a></li>
+            <li><a href="profile-addresses-change-address-click-on-address.html" target="_blank">Профиль (адреса (изменить адрес (клик на адрес)))</a></li>
+            <li><a href="profile-map-click-on-edit.html" target="_blank">Профиль (карта, клик на "Изменить")</a></li>
+            <li><a href="profile-addresses-delete-address.html" target="_blank">Профиль (адреса (удалить адрес))</a></li>
+            <li><a href="profile-addresses-delete-address-confirmation.html" target="_blank">Профиль (адреса (удалить адрес; подтверждение))</a></li>
+            <li><a href="profile-settings.html" target="_blank">Профиль (настройки)</a></li>
+            <li><a href="profile-add-phone.html" target="_blank">Профиль (добавить телефон)</a></li>
+            <li><a href="profile-add-mail.html" target="_blank">Профиль (добавить почту)</a></li>
+            <li><a href="profile-set-up-notifications.html" target="_blank">Профиль (настроить уведомления)</a></li>
+            <li><a href="profile-exit.html" target="_blank">Профиль (выйти)</a></li>
+          </ol>
+        </div>
+        <div class="col">
+          <h2>Разное</h2>
+          <ol>
+            <li><a href="main.html" target="_blank">Главная</a></li>
+            <li><a href="main-product-card-change.html" target="_blank">Главная (карточка товара, добавление позиции, кнопка; мобильная версия)</a></li>
+            <li><a href="main-mobile-search.html" target="_blank">Главная (мобильный поиск)</a></li>
+            <li><a href="main-add-address-step-1.html" target="_blank">Добавить адрес (шаг 1)</a></li>
+            <li><a href="main-add-address-step-2.html" target="_blank">Добавить адрес (шаг 2)</a></li>
+            <li><a href="main-map.html" target="_blank">Большая карта</a></li>
+            <li><a href="search-result.html" target="_blank">Результаты поиска</a></li>
+            <li><a href="search-result-empty.html" target="_blank">Результаты поиска (ничего не нашлось)</a></li>
+            <li><a href="category.html" target="_blank">Категория</a></li>
+            <li><a href="404.html" target="_blank">404</a></li>
+            <li><a href="error.html" target="_blank">Ошибка!</a></li>
+          </ol>
+        </div>
+        <div class="col">
+          <h2>Вход</h2>
+          <ol>
+            <li><a href="sign-in-step-1.html" target="_blank">Вход (шаг 1)</a></li>
+            <li><a href="sign-in-step-2.html" target="_blank">Вход (шаг 2)</a></li>
+            <li><a href="sign-in-step-3.html" target="_blank">Вход (шаг 3)</a></li>
+          </ol>
+        </div>
+        <div class="col">
+          <h2>Переиспользуемые компоненты</h2>
+          <ol>
+            <li><a href="ui-kit.html" target="_blank">UI Kit</a></li>
+            <li><a href="icons.html" target="_blank">Icons</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

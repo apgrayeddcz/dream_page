@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Карьера (отправить резюме) | Мечта (презентация)</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/app-project.css">
+    <!-- Removing the error about the absence of favicon-->
+    <link rel="shortcut icon" href="data:,">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__col"><a class="logo" href="/" title="Мечта"></a></div>
+        <div class="header__col">
+          <nav class="nav"><a class="nav__item nav__item--disable">Сайт доставки</a><a class="nav__item" href="general-info.html">Поставщикам</a><a class="nav__item" href="careers.html">Карьера</a></nav>
+          <div class="header__btn">
+            <div class="header__btn-item"></div>
+            <div class="header__btn-item"></div>
+            <div class="header__btn-item"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="careers">
+      <div class="careers__container">
+        <div class="careers__row">
+          <h1>Карьера</h1>
+        </div>
+        <div class="careers__row">
+          <div class="careers__tabs-controls">
+            <div class="careers__tabs-controls-item careers__tabs-controls-item--active" data-tabs="1" data-control>Отправить резюме</div>
+            <div class="careers__tabs-controls-item" data-tabs="2" data-control>Горячие вакансии</div>
+          </div>
+        </div>
+        <div class="careers__row">
+          <div class="careers__tabs-content">
+            <!-- First tab-->
+            <div class="careers__tabs-content-item careers__tabs-content-item--active" data-tabs="1">
+              <div class="careers__text">Заполните форму и&nbsp;мы&nbsp;перезвоним Вам в&nbsp;течении рабочего дня или напишите письмо на&nbsp;нашу корпоративную почту с&nbsp;указанием желаемой вакансии.</div>
+              <form class="careers__form" id="feedback-form" enctype="multipart/form-data" method="post">
+                <div class="careers__form-row">
+                  <div class="careers__form-label">ФИО</div>
+                  <input class="careers__input-text" id="nameFF" type="text" name="nameFF" value="" placeholder="Введите имя">
+                  <div class="careers__warning">Заполните поле</div>
+                </div>
+                <div class="careers__form-row">
+                  <div class="careers__form-label">Год рождения</div>
+                  <input class="careers__input-text careers__input-text--year" id="yearFF" type="text" name="yearFF" value="" placeholder="Введите год рождения">
+                  <div class="careers__warning">Заполните поле</div>
+                </div>
+                <div class="careers__form-row">
+                  <div class="careers__form-label">Вакансия</div>
+                  <input class="careers__input-text careers__input-text--vacancy" id="vacancyFF" type="text" name="vacancyFF" value="" placeholder="Введите название интересующей Вас вакансии">
+                  <div class="careers__warning">Заполните поле</div>
+                </div>
+                <div class="careers__form-row">
+                  <label class="careers__form-label careers__form-label--file" for="fileFF">Прикрепить резюме (PDF, DOCX, TXT)
+                    <div class="careers__form-label-wrapper"><span class="careers__form-label-btn">Прикрепить</span><span class="careers__form-label-text">Выберите файл на&nbsp;своем устройстве</span></div>
+                  </label>
+                  <input class="careers__input-file" id="fileFF" type="file" name="fileFF[]" accept=".pdf,.docx,.txt" multiple="">
+                  <div class="careers__warning">Заполните поле</div>
+                </div>
+                <div class="careers__form-row">
+                  <div class="careers__form-label">Сообщение</div>
+                  <textarea class="careers__textarea" id="messageFF" name="messageFF" placeholder="Введите текст сообщения" maxlength="200"></textarea>
+                  <div class="careers__warning">Заполните поле</div>
+                </div>
+                <div class="careers__form-row careers__form-row--center">
+                  <button class="careers__btn careers__btn--success careers__btn--hidden">Отправлено</button>
+                  <button class="careers__btn careers__btn--send" id="submitFF" type="submit" disabled>
+                    <div class="careers__btn-text">Отправить</div>
+                    <div class="preloader">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </button>
+                </div>
+              </form>
+              <div class="careers__response" id="response"></div>
+            </div>
+            <!-- Second tab-->
+            <div class="careers__tabs-content-item" data-tabs="2">
+              <div class="careers__select-wrapper">
+                <div class="careers__form-row">
+                  <div class="careers__form-label">Выберите вакансию</div>
+                  <select class="careers__select" name="vacancy">
+                    <option value="0">Бухгалтер</option>
+                    <option value="1">Менеджер по продажам</option>
+                    <option value="2">Контент-менеджер</option>
+                    <option value="3">Дизайнер</option>
+                    <option value="4">Курьер</option>
+                    <option value="5">Специалист по поисковой оптимизации (SEO)</option>
+                    <option value="6">Аналитик веб-данных</option>
+                    <option value="7">Копирайтер</option>
+                    <option value="8">Фотограф/Видеограф</option>
+                    <option value="9">Специалист по социальным сетям</option>
+                    <option value="10">Веб-разработчик</option>
+                  </select>
+                </div>
+              </div>
+              <div class="careers__vacancies-wrapper">
+                <div class="careers__vacancies-item careers__vacancies-item--active" data-vacancy="0">
+                  <h2>Бухгалтер</h2>
+                  <p><b>Обязанности</b></p>
+                  <ul>
+                    <li>Ведение бухгалтерского налогового учета.</li>
+                    <li>Знание законодательства РФ.</li>
+                    <li>Опыт работы.</li>
+                  </ul>
+                  <p><b>Условия работы</b></p>
+                  <ul>
+                    <li>Работа в&nbsp;стабильно развивающейся компании &laquo;Яблоко&raquo;.</li>
+                    <li>Заработная плата: оклад + премии.</li>
+                    <li>Возможность карьерного роста;</li>
+                    <li>Соц. пакет;</li>
+                    <li>Дружный коллектив.</li>
+                  </ul>
+                  <p>Задача организации, в особенности же рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+                  <div class="careers__btn" data-tabs="1" data-control>Отправить резюме</div>
+                </div>
+                <div class="careers__vacancies-item" data-vacancy="1">
+                  <h2>Менеджер по продажам</h2>
+                  <p><b>Обязанности</b></p>
+                  <ul>
+                    <li>Ведение бухгалтерского налогового учета.</li>
+                    <li>Знание законодательства РФ.</li>
+                    <li>Опыт работы.</li>
+                  </ul>
+                  <p><b>Условия работы</b></p>
+                  <ul>
+                    <li>Работа в&nbsp;стабильно развивающейся компании &laquo;Яблоко&raquo;.</li>
+                    <li>Заработная плата: оклад + премии.</li>
+                    <li>Возможность карьерного роста;</li>
+                    <li>Соц. пакет;</li>
+                    <li>Дружный коллектив.</li>
+                  </ul>
+                  <p>Задача организации, в особенности же рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+                  <div class="careers__btn" data-tabs="1" data-control>Отправить резюме</div>
+                </div>
+                <div class="careers__vacancies-item" data-vacancy="2">
+                  <h2>Контент-менеджер</h2>
+                  <p><b>Обязанности</b></p>
+                  <ul>
+                    <li>Ведение бухгалтерского налогового учета.</li>
+                    <li>Знание законодательства РФ.</li>
+                    <li>Опыт работы.</li>
+                  </ul>
+                  <p><b>Условия работы</b></p>
+                  <ul>
+                    <li>Работа в&nbsp;стабильно развивающейся компании &laquo;Яблоко&raquo;.</li>
+                    <li>Заработная плата: оклад + премии.</li>
+                    <li>Возможность карьерного роста;</li>
+                    <li>Соц. пакет;</li>
+                    <li>Дружный коллектив.</li>
+                  </ul>
+                  <p>Задача организации, в особенности же рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+                  <div class="careers__btn" data-tabs="1" data-control>Отправить резюме</div>
+                </div>
+                <div class="careers__vacancies-item" data-vacancy="3">
+                  <h2>Дизайнер</h2>
+                  <p><b>Обязанности</b></p>
+                  <ul>
+                    <li>Ведение бухгалтерского налогового учета.</li>
+                    <li>Знание законодательства РФ.</li>
+                    <li>Опыт работы.</li>
+                  </ul>
+                  <p><b>Условия работы</b></p>
+                  <ul>
+                    <li>Работа в&nbsp;стабильно развивающейся компании &laquo;Яблоко&raquo;.</li>
+                    <li>Заработная плата: оклад + премии.</li>
+                    <li>Возможность карьерного роста;</li>
+                    <li>Соц. пакет;</li>
+                    <li>Дружный коллектив.</li>
+                  </ul>
+                  <p>Задача организации, в особенности же рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+                  <div class="careers__btn" data-tabs="1" data-control>Отправить резюме</div>
+                </div>
+                <div class="careers__vacancies-item" data-vacancy="4">
+                  <h2>Курьер</h2>
+                  <p><b>Обязанности</b></p>
+                  <ul>
+                    <li>Ведение бухгалтерского налогового учета.</li>
+                    <li>Знание законодательства РФ.</li>
+                    <li>Опыт работы.</li>
+                  </ul>
+                  <p><b>Условия работы</b></p>
+                  <ul>
+                    <li>Работа в&nbsp;стабильно развивающейся компании &laquo;Яблоко&raquo;.</li>
+                    <li>Заработная плата: оклад + премии.</li>
+                    <li>Возможность карьерного роста;</li>
+                    <li>Соц. пакет;</li>
+                    <li>Дружный коллектив.</li>
+                  </ul>
+                  <p>Задача организации, в особенности же рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+                  <div class="careers__btn" data-tabs="1" data-control>Отправить резюме</div>
+                </div>
+                <div class="careers__vacancies-item" data-vacancy="5">
+                  <h2>Специалист по поисковой оптимизации (SEO)</h2>
+                  <p><b>Обязанности</b></p>
+                  <ul>
+                    <li>Ведение бухгалтерского налогового учета.</li>
+                    <li>Знание законодательства РФ.</li>
+                    <li>Опыт работы.</li>
+                  </ul>
+                  <p><b>Условия работы</b></p>
+                  <ul>
+                    <li>Работа в&nbsp;стабильно развивающейся компании &laquo;Яблоко&raquo;.</li>
+                    <li>Заработная плата: оклад + премии.</li>
+                    <li>Возможность карьерного роста;</li>
+                    <li>Соц. пакет;</li>
+                    <li>Дружный коллектив.</li>
+                  </ul>
+                  <p>Задача организации, в особенности же рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+                  <div class="careers__btn" data-tabs="1" data-control>Отправить резюме</div>
+                </div>
+                <div class="careers__vacancies-item" data-vacancy="6">
+                  <h2>Аналитик веб-данных</h2>
+                  <p><b>Обязанности</b></p>
+                  <ul>
+                    <li>Ведение бухгалтерского налогового учета.</li>
+                    <li>Знание законодательства РФ.</li>
+                    <li>Опыт работы.</li>
+                  </ul>
+                  <p><b>Условия работы</b></p>
+                  <ul>
+                    <li>Работа в&nbsp;стабильно развивающейся компании &laquo;Яблоко&raquo;.</li>
+                    <li>Заработная плата: оклад + премии.</li>
+                    <li>Возможность карьерного роста;</li>
+                    <li>Соц. пакет;</li>
+                    <li>Дружный коллектив.</li>
+                  </ul>
+                  <p>Задача организации, в особенности же рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+                  <div class="careers__btn" data-tabs="1" data-control>Отправить резюме</div>
+                </div>
+                <div class="careers__vacancies-item" data-vacancy="7">
+                  <h2>Копирайтер</h2>
+                  <p><b>Обязанности</b></p>
+                  <ul>
+                    <li>Ведение бухгалтерского налогового учета.</li>
+                    <li>Знание законодательства РФ.</li>
+                    <li>Опыт работы.</li>
+                  </ul>
+                  <p><b>Условия работы</b></p>
+                  <ul>
+                    <li>Работа в&nbsp;стабильно развивающейся компании &laquo;Яблоко&raquo;.</li>
+                    <li>Заработная плата: оклад + премии.</li>
+                    <li>Возможность карьерного роста;</li>
+                    <li>Соц. пакет;</li>
+                    <li>Дружный коллектив.</li>
+                  </ul>
+                  <p>Задача организации, в особенности же рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+                  <div class="careers__btn" data-tabs="1" data-control>Отправить резюме</div>
+                </div>
+                <div class="careers__vacancies-item" data-vacancy="8">
+                  <h2>Фотограф/Видеограф</h2>
+                  <p><b>Обязанности</b></p>
+                  <ul>
+                    <li>Ведение бухгалтерского налогового учета.</li>
+                    <li>Знание законодательства РФ.</li>
+                    <li>Опыт работы.</li>
+                  </ul>
+                  <p><b>Условия работы</b></p>
+                  <ul>
+                    <li>Работа в&nbsp;стабильно развивающейся компании &laquo;Яблоко&raquo;.</li>
+                    <li>Заработная плата: оклад + премии.</li>
+                    <li>Возможность карьерного роста;</li>
+                    <li>Соц. пакет;</li>
+                    <li>Дружный коллектив.</li>
+                  </ul>
+                  <p>Задача организации, в особенности же рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+                  <div class="careers__btn" data-tabs="1" data-control>Отправить резюме</div>
+                </div>
+                <div class="careers__vacancies-item" data-vacancy="9">
+                  <h2>Специалист по социальным сетям</h2>
+                  <p><b>Обязанности</b></p>
+                  <ul>
+                    <li>Ведение бухгалтерского налогового учета.</li>
+                    <li>Знание законодательства РФ.</li>
+                    <li>Опыт работы.</li>
+                  </ul>
+                  <p><b>Условия работы</b></p>
+                  <ul>
+                    <li>Работа в&nbsp;стабильно развивающейся компании &laquo;Яблоко&raquo;.</li>
+                    <li>Заработная плата: оклад + премии.</li>
+                    <li>Возможность карьерного роста;</li>
+                    <li>Соц. пакет;</li>
+                    <li>Дружный коллектив.</li>
+                  </ul>
+                  <p>Задача организации, в особенности же рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+                  <div class="careers__btn" data-tabs="1" data-control>Отправить резюме</div>
+                </div>
+                <div class="careers__vacancies-item" data-vacancy="10">
+                  <h2>Веб-разработчик</h2>
+                  <p><b>Обязанности</b></p>
+                  <ul>
+                    <li>Ведение бухгалтерского налогового учета.</li>
+                    <li>Знание законодательства РФ.</li>
+                    <li>Опыт работы.</li>
+                  </ul>
+                  <p><b>Условия работы</b></p>
+                  <ul>
+                    <li>Работа в&nbsp;стабильно развивающейся компании &laquo;Яблоко&raquo;.</li>
+                    <li>Заработная плата: оклад + премии.</li>
+                    <li>Возможность карьерного роста;</li>
+                    <li>Соц. пакет;</li>
+                    <li>Дружный коллектив.</li>
+                  </ul>
+                  <p>Задача организации, в особенности же рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+                  <div class="careers__btn" data-tabs="1" data-control>Отправить резюме</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__row footer__row--align-right"><a class="footer__social-item footer__social-item--youtube" href="#"></a><a class="footer__social-item footer__social-item--tiktok" href="#"></a><a class="footer__social-item footer__social-item--vk" href="#"></a><a class="footer__social-item footer__social-item--ok" href="#"></a></div>
+        <div class="footer__row">
+          <div class="footer__col footer__col--left"><a class="footer__nav-item" href="text.html">Контакты</a><a class="footer__nav-item" href="text.html">Для поставщиков</a></div>
+          <div class="footer__col footer__col--center"><a class="footer__nav-item" href="text.html">Политика конфиденциальности</a><a class="footer__nav-item" href="text.html">Лицензионное соглашение</a><a class="footer__nav-item" href="text.html">Условия продажи товаров</a></div>
+          <div class="footer__col footer__col--right">
+            <p>Зона, время, товары и&nbsp;предложения доставки ограничены.<br>Организатор, продавец ООО &laquo;Название организации&raquo; ОГРН 1234567891011, 192000, Город,<br>улица Название, дом&nbsp;11, этаж&nbsp;1, помещение 924. Информационные услуги оказываются<br>ООО &laquo;Название организации&raquo; ОГРН 1234567891011, 192000, Город,<br>улица Название, дом&nbsp;99, этаж&nbsp;74</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app-project-base.js"></script>
+    <script src="js/app-project-run.js"></script>
+  </body>
+</html>

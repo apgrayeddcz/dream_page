@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Вход (шаг3) | Мечта (интернет-магазин)</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/app-project.css">
+    <!-- Removing the error about the absence of favicon-->
+    <link rel="shortcut icon" href="data:,">
+  </head>
+  <body>
+    <!-- Войти-->
+    <div class="popup popup--sign-in popup--active" data-popup="sign-in">
+      <div class="popup__container">
+        <div class="popup__row popup__row--title">
+          <div class="popup__btn popup__btn--back"></div>
+          <div class="popup__title">+7 (912) 345-67-89</div>
+          <div class="popup__btn popup__btn--close"></div>
+        </div>
+        <div class="popup__row popup__row--sign-in">
+          <form class="sign-in">
+            <div class="sign-in__container">
+              <!-- Third step-->
+              <div class="sign-in__step sign-in__step--active" data-step="third">
+                <!-- Content-->
+                <div class="sign-in__content sign-in__content--column">
+                  <div class="sign-in__content-row">
+                    <div class="sign-in__title">Код из&nbsp;СМС</div>
+                    <div class="sign-in__input-wrapper">
+                      <input class="sign-in__input-num-code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="d{1}" value="" maxlength="1">
+                      <input class="sign-in__input-num-code" type="text" inputmode="numeric" pattern="d{1}" value="" maxlength="1">
+                      <input class="sign-in__input-num-code" type="text" inputmode="numeric" pattern="d{1}" value="" maxlength="1">
+                      <input class="sign-in__input-num-code" type="text" inputmode="numeric" pattern="d{1}" value="" maxlength="1">
+                    </div>
+                    <div class="sign-in__message">Получить новый код через 25&nbsp;секунд</div>
+                    <div class="sign-in__preloader">
+                      <div class="sign-in__preloader-item sign-in__preloader-item--first"></div>
+                      <div class="sign-in__preloader-item sign-in__preloader-item--second"></div>
+                      <div class="sign-in__preloader-item sign-in__preloader-item--third"></div>
+                      <div class="sign-in__preloader-item sign-in__preloader-item--fourth"></div>
+                      <div class="sign-in__preloader-item sign-in__preloader-item--fifth"></div>
+                      <div class="sign-in__preloader-item sign-in__preloader-item--sixth"></div>
+                      <div class="sign-in__preloader-item sign-in__preloader-item--seventh"></div>
+                      <div class="sign-in__preloader-item sign-in__preloader-item--eighth"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="popup__overlay"></div>
+    </div>
+    <script src="js/app-project-base.js"></script>
+    <script src="js/app-project-run.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Главная | Мечта (интернет-магазин)</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/app-project.css">
+    <!-- Removing the error about the absence of favicon-->
+    <link rel="shortcut icon" href="data:,">
+  </head>
+  <body>
+    <!-- Выбрать адрес доставки-->
+    <div class="popup popup--big popup--active" data-popup="select-delivery-address-2">
+      <div class="popup__container">
+        <div class="map">
+          <div class="map__container">
+            <div class="map__header">
+              <div class="map__btn map__btn--back"></div>
+              <div class="map__btn map__btn--close"></div>
+            </div>
+            <div class="map__controls">
+              <div class="map__btn map__btn--plus"></div>
+              <div class="map__btn map__btn--minus"></div>
+            </div>
+            <div class="map__content map__content--bg-gradient">
+              <div class="map__content-title">Главный универсальный магазин (ГУМ)</div>
+              <div class="map__content-btns">
+                <div class="button button--gray">Изменить</div>
+                <div class="button button--red">Да, всё верно</div>
+              </div>
+            </div>
+          </div><img class="map__img" src="img/sidebar/2.webp" alt="">
+        </div>
+      </div>
+      <div class="popup__overlay"></div>
+    </div>
+    <script src="js/app-project-base.js"></script>
+    <script src="js/app-project-run.js"></script>
+  </body>
+</html>

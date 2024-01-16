@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Вход (шаг 1) | Мечта (интернет-магазин)</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/app-project.css">
+    <!-- Removing the error about the absence of favicon-->
+    <link rel="shortcut icon" href="data:,">
+  </head>
+  <body>
+    <!-- Sign In-->
+    <div class="popup popup--sign-in popup--active" data-popup="sign-in">
+      <div class="popup__container">
+        <div class="popup__row popup__row--title">
+          <div class="popup__btn popup__btn--back popup__btn--hidden"></div>
+          <div class="popup__title popup__btn--hidden"></div>
+          <div class="popup__btn popup__btn--close"></div>
+        </div>
+        <div class="popup__row popup__row--sign-in">
+          <form class="sign-in">
+            <div class="sign-in__container">
+              <!-- First step-->
+              <div class="sign-in__step sign-in__step--active" data-step="first">
+                <!-- Content-->
+                <div class="sign-in__content">
+                  <button class="button button--gray" id="sign-in-enter">Войти по&nbsp;номеру телефона</button>
+                </div>
+                <!-- Footer-->
+                <div class="sign-in__footer">
+                  <div class="sign-in__footer-row">
+                    <label class="sign-in__checkbox">
+                      <input type="checkbox" checked="checked">
+                      <div class="sign-in__checkbox-checkmark"></div>
+                      <div class="sign-in__checkbox-body">
+                        Получать
+                        <a href="#" target="_blank">предложения об&nbsp;акциях и&nbsp;скидках</a>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="sign-in__footer-row">
+                    <label class="sign-in__checkbox">
+                      <input type="checkbox" checked="checked">
+                      <div class="sign-in__checkbox-checkmark"></div>
+                      <div class="sign-in__checkbox-body">
+                        Делиться
+                        <a href="#" target="_blank">данными с&nbsp;партнерами Мечты</a>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="sign-in__footer-row">
+                    <div class="sign-in__text">
+                      Продолжая авторизацию, вы&nbsp;соглашаетесь
+                      <a href="#" target="_blank">с&nbsp;политикой конфиденциальности, условиями сервиса и&nbsp;условиями продажи товаров.</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="popup__overlay"></div>
+    </div>
+    <script src="js/app-project-base.js"></script>
+    <script src="js/app-project-run.js"></script>
+  </body>
+</html>

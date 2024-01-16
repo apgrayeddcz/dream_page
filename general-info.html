@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Поставщикам | Мечта (презентация)</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/app-project.css">
+    <!-- Removing the error about the absence of favicon-->
+    <link rel="shortcut icon" href="data:,">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__col"><a class="logo" href="/" title="Мечта"></a></div>
+        <div class="header__col">
+          <nav class="nav"><a class="nav__item nav__item--disable">Сайт доставки</a><a class="nav__item" href="general-info.html">Поставщикам</a><a class="nav__item" href="careers.html">Карьера</a></nav>
+          <div class="header__btn">
+            <div class="header__btn-item"></div>
+            <div class="header__btn-item"></div>
+            <div class="header__btn-item"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="general-info">
+      <div class="general-info__container">
+        <h1>Общие сведения для поставщиков и&nbsp;производителей</h1>
+        <p>Добро пожаловать в&nbsp;нашу компанию! Мы&nbsp;рады предложить вам возможность стать нашим поставщиком или производителем. В&nbsp;этом тексте мы&nbsp;расскажем вам об&nbsp;общих сведениях и&nbsp;преимуществах сотрудничества с&nbsp;нами.</p>
+        <p>Мы&nbsp;являемся ведущей компанией в&nbsp;отрасли и&nbsp;специализируемся на&nbsp;поставке и&nbsp;производстве различных товаров.</p>
+        <p>Наша компания имеет обширную клиентскую базу и&nbsp;готова предоставить вам возможность расширить свой бизнес и&nbsp;достичь новых высот.</p>
+        <p>Мы&nbsp;ценим качество и&nbsp;надежность, поэтому мы&nbsp;стремимся работать только с&nbsp;лучшими поставщиками и&nbsp;производителями. Мы&nbsp;готовы рассмотреть вашу продукцию или услуги и&nbsp;оценить их&nbsp;соответствие нашим требованиям. Одним из&nbsp;наших ключевых преимуществ является наша широкая сеть распределения и&nbsp;логистики. Мы&nbsp;обеспечим эффективную доставку ваших товаров и&nbsp;гарантируем своевременную поставку в&nbsp;различные регионы.</p>
+        <form class="general-info__form" id="feedback-form" enctype="multipart/form-data" method="post">
+          <div class="general-info__form-row">
+            <div class="general-info__form-col">
+              <div class="general-info__form-label">ФИО</div>
+              <input class="general-info__input-text" id="nameFF" type="text" name="nameFF" value="" placeholder="Введите имя">
+              <div class="general-info__warning">Заполните поле</div>
+            </div>
+            <div class="general-info__form-col">
+              <div class="general-info__form-label">Телефон</div>
+              <input class="general-info__input-text general-info__input-text--phone" id="phoneFF" type="text" name="phoneFF" value="" placeholder="+7 (900) 123-45-67">
+              <div class="general-info__warning">Заполните поле</div>
+            </div>
+          </div>
+          <div class="general-info__form-row">
+            <div class="general-info__form-col">
+              <div class="general-info__form-label">Название компании</div>
+              <input class="general-info__input-text" id="titleFF" type="text" name="titleFF" value="" placeholder="Введите название компании">
+              <div class="general-info__warning">Заполните поле</div>
+            </div>
+            <div class="general-info__form-col">
+              <div class="general-info__form-label">Почта</div>
+              <input class="general-info__input-text general-info__input-text--email" id="contactFF" type="text" name="contactFF" value="" placeholder="Введите email">
+              <div class="general-info__warning">Заполните поле</div>
+            </div>
+          </div>
+          <div class="general-info__form-row">
+            <label class="general-info__form-label general-info__form-label--file" for="fileFF">
+              <div class="general-info__form-label-wrapper"><span class="general-info__form-label-btn">Прикрепить</span><span class="general-info__form-label-text">Выберите файл на&nbsp;своем устройстве (до 10 МБ)</span></div>
+            </label>
+            <input class="general-info__input-file" id="fileFF" type="file" name="fileFF[]" accept=".pdf,.docx,.txt,.xls,.xlsx" multiple="">
+            <div class="general-info__warning">Заполните поле</div>
+          </div>
+          <div class="general-info__form-row general-info__form-row--full-width">
+            <div class="general-info__form-label">Сообщение</div>
+            <textarea class="general-info__textarea" id="messageFF" name="messageFF" placeholder="Введите текст сообщения" maxlength="200"></textarea>
+            <div class="general-info__warning">Заполните поле</div>
+          </div>
+          <div class="general-info__form-row general-info__form-row--center">
+            <button class="general-info__btn general-info__btn--success general-info__btn--hidden">Отправлено</button>
+            <button class="general-info__btn general-info__btn--send" id="submitFF" type="submit" disabled>
+              <div class="general-info__btn-text">Отправить</div>
+              <div class="preloader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </button>
+          </div>
+        </form>
+        <div class="general-info__response" id="response"></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__row footer__row--align-right"><a class="footer__social-item footer__social-item--youtube" href="#"></a><a class="footer__social-item footer__social-item--tiktok" href="#"></a><a class="footer__social-item footer__social-item--vk" href="#"></a><a class="footer__social-item footer__social-item--ok" href="#"></a></div>
+        <div class="footer__row">
+          <div class="footer__col footer__col--left"><a class="footer__nav-item" href="text.html">Контакты</a><a class="footer__nav-item" href="text.html">Для поставщиков</a></div>
+          <div class="footer__col footer__col--center"><a class="footer__nav-item" href="text.html">Политика конфиденциальности</a><a class="footer__nav-item" href="text.html">Лицензионное соглашение</a><a class="footer__nav-item" href="text.html">Условия продажи товаров</a></div>
+          <div class="footer__col footer__col--right">
+            <p>Зона, время, товары и&nbsp;предложения доставки ограничены.<br>Организатор, продавец ООО &laquo;Название организации&raquo; ОГРН 1234567891011, 192000, Город,<br>улица Название, дом&nbsp;11, этаж&nbsp;1, помещение 924. Информационные услуги оказываются<br>ООО &laquo;Название организации&raquo; ОГРН 1234567891011, 192000, Город,<br>улица Название, дом&nbsp;99, этаж&nbsp;74</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app-project-base.js"></script>
+    <script src="js/app-project-run.js"></script>
+  </body>
+</html>
